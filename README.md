@@ -47,6 +47,8 @@ element in a wrong way than staying neutral.
 </h1>
 ```
 
+> The ```figure``` tag is for self-contained images, e.g. those needing a caption/intended to not disrupt the flow of a document.
+
 ### Brevity
 
 Keep your code terse. Forget about your old XHTML habits.
