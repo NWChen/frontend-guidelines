@@ -201,6 +201,10 @@ div {
 }
 ```
 
+> All HTML elements can be considered as boxes; the CSS box model envisions a box that wraps around every HTML element, from content to padding to border to margin.
+
+> By default, the ```box-sizing``` property causes the ```width``` and ```height``` properties to be measured including only the content - not the padding, border, or margin. This value is ```content-box```.
+
 ### Flow
 
 Don't change the default behavior of an element if you can avoid it. Keep elements in the
@@ -218,6 +222,12 @@ img {
   vertical-align: middle;
 }
 ```
+
+> A **block-level element** always starts on a new line, taking up the full width available.
+
+> An **inline element** does not start on a new line - it shares it with other elements, taking up as much width as necessary.
+
+> By default, the ```display``` property takes the value ```inline```.
 
 Similarly, don't take an element off the flow if you can avoid it.
 
@@ -310,12 +320,12 @@ Overriding styles makes selectors and debugging harder. Avoid it when possible.
 li {
   visibility: hidden;
 }
-li:first-child {
+li:first-child { // every <li> element that is the first child of its parent
   visibility: visible;
 }
 
 /* good */
-li + li {
+li + li { // every <li> element that directly follows another <li>; by default, a single <li> would be visible
   visibility: hidden;
 }
 ```
@@ -345,7 +355,7 @@ it's not needed.
 /* bad */
 div {
   transition: all 1s;
-  top: 50%;
+  top: 50%; // distance from top edge of nearest positioned ancestor
   margin-top: -10px;
   padding-top: 5px;
   padding-right: 10px;
