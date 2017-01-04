@@ -30,6 +30,10 @@ HTML5 provides us with lots of semantic elements aimed to describe precisely the
 </main>
 ```
 
+> The ```article``` tag distinguishes content that could stand alone.
+> The ```header``` tag contains introductory content/navigational links.
+> There aren't [that many tags](http://www.htmldog.com/references/html/tags/).
+
 Make sure you understand the semantics of the elements you're using. It's worse to use a semantic
 element in a wrong way than staying neutral.
 
@@ -48,6 +52,7 @@ element in a wrong way than staying neutral.
 ```
 
 > The ```figure``` tag is for self-contained images, e.g. those needing a caption/intended to not disrupt the flow of a document.
+> Note that **flow** refers to the order by which elements are rendered - on the same line, from top to bottom, etc.
 
 ### Brevity
 
@@ -87,6 +92,9 @@ Keep your code terse. Forget about your old XHTML habits.
   <script src=main.js></script>
 </html>
 ```
+
+> For HTML5, the ```type``` attribute is optional and defaults to ```text/javascript```.
+> The [Google Style Guide](https://google.github.io/styleguide/htmlcssguide.xml#Optional_Tags) for HTML actually recommends the omission of optional tags: ```html```, ```head```, ```body```, ```p```, ```li```.
 
 ### Accessibility
 
